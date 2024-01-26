@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;500;700;900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0cap;
+    border: 0ch;
+    padding: 0%;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-image: url(img/tulipanes.jpg);
+    background-size:cover;
+    background-position: center;
+    background-repeat:space;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.contenedor-madre{
+  display:flex ;
+  flex-direction: column;
+  backdrop-filter: blur(10px);
+  width: 25vw;
+  height: auto;
+  align-items: center;
+  border-radius: 2vw;
+}
+
+.imagen{
+    margin-top: 4vw;
+}
+
+.circulo{
+    border-radius: 20rem;
+    border: #3d3a4e 20px;
+}
+
+.circulo img{
+    height: 20vh;
+    border-radius: 20rem;
+}
+
+.texto h2, p{
+    text-align: center;
+    color: #fff;
+}
+
+.enlaces{
+    display: flex;
+    flex-direction: column;
+}
+
+.enlaces button{
+    margin: .8rem ;
+}
+
+.button {
+    position: relative;
+    overflow: hidden;
+    height: 3rem;
+    padding: 0 2rem;
+    border-radius: 1.5rem;
+    background: #3d3a4e;
+    background-size: 400%;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .button:hover::before {
+    transform: scaleX(1);
+  }
+  
+  .button-content {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    width: 100%;
+    height: inherit;
+    border-radius: inherit;
+    background: linear-gradient(
+      82.3deg,
+      rgba(150, 93, 233, 1) 10.8%,
+      rgba(99, 88, 238, 1) 94.3%
+    );
+    transition: all 0.475s;
+  }
+
+  .tarjeta-madre{
+    display: flex;
+    backdrop-filter: blur(10px);
+    height: 400px;
+    width: 600px;
+    align-items: center;
+    border-radius: 2rem;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .trajeta{
+    display: flex;
+    width: 500px;
+    height: 310px;
+    background-color: #fff;
+    border-radius: 20px;
+    background-image: url(img/tarjeta.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    flex-direction: column;
+  }
+  .nombre{
+    color: white;
+    margin-top: 6.5rem;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-left: 6rem;
+  }
+
+  .texto-p{
+    margin-top: .6rem;
+  }
+
+  .texto-p, .ncuenta{
+    font-size: 1.8rem;
+    margin-left: 1rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .texto-p p, .ncuenta p{
+    margin-right: 1rem;
+
+  }
+
+  h3{
+    color: white;
+    margin-right: 2rem;
+    font-weight: 200;
+  }
+
+  @media (max-width: 1000px) {
+    .tarjeta-madre{
+      transform: scale(.65);
+    }
+  }
+  /* .nombre{
+    color: rgb(255, 255, 255);
+    position: absolute;
+    font-weight: bold;
+    margin-top: 7rem;
+    margin-left: 9rem;
+    font-size: 1.8rem;
+  }
+
+  .cuenta{
+    margin: 2rem 3rem;
+  } */
+
+  /* @media (min-width: 1000px) {
+    .contenedor-madre{
+        display:flex ;
+        flex-direction: column;
+        backdrop-filter: blur(10px);
+        width: 25vw;
+        height: auto;
+        align-items: center;
+    }
+
+    .trajeta{
+      width: 500px;
+    height: 310px;
+    }
+  } */
+
+
+
