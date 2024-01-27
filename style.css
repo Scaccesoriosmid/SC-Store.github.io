@@ -151,9 +151,16 @@ body{
     font-weight: 200;
   }
 
-  @media (max-width: 1000px) {
-    .tarjeta-madre{
-      transform: scale(.65);
+  @media (max-width: 700px) {
+
+    .contenedor-madre{
+      display:flex ;
+      flex-direction: column;
+      backdrop-filter: blur(10px);
+      width: 60vw;
+      height: auto;
+      align-items: center;
+      border-radius: 10vw;
     }
   }
   /* .nombre{
